@@ -22,7 +22,7 @@ class Population(population.Population):
 ch = []
 for i in range(100):
     ch.append([bool(random.randint(0, 1)) for i in range(19)])
-p = Population(ch, 100, {}.fromkeys(range(19), (0.01, 1, 1000)))
+p = Population(ch, 100, {}.fromkeys(range(19), (0.01,)))
 print(max(p.fitness()))
 for i in range(1000):
     p.evolute()
